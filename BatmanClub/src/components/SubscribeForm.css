@@ -1,0 +1,40 @@
+.form-description {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: var(--bat-white);
+  border: 1px solid var(--bat-grey);
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: var(--bat-grey);
+}
+
+.submit-btn {
+  background-color: var(--bat-yellow);
+  color: var(--bat-black);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e6c200; 
+}

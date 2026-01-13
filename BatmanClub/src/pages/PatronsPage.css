@@ -1,0 +1,86 @@
+.patrons-page {
+  padding: 2rem 0;
+}
+
+.page-title {
+  color: var(--bat-yellow);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.page-description {
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+  color: var(--bat-white);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.patron-panels {
+  display: flex;
+  grid-column: span 12;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 40rem) {
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .grid-container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 25rem) { 
+  .grid-container {
+    gap: 0.75rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+  }
+  
+  .page-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 22.5rem) { 
+  .grid-container {
+    gap: 0.5rem;
+  }
+  
+  .patron-panel,
+  .form-container,
+  .profile-container,
+  .sidebar-content {
+    padding: 0.75rem;
+  }
+  
+  .page-title {
+    font-size: 1.3rem;
+  }
+  
+  .page-description {
+    font-size: 0.85rem;
+  }
+}

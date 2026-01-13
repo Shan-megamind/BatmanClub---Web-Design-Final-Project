@@ -1,0 +1,70 @@
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: var(--bat-dark-grey);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 31.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--bat-grey);
+  animation: modalAppear 0.3s ease;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--bat-grey);
+}
+
+.modal-header h3 {
+  margin: 0;
+  color: var(--bat-yellow);
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  color: var(--bat-light-grey);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-modal-btn:hover {
+  color: var(--bat-yellow);
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+@media (max-width: 40rem) {
+  .modal {
+    width: 90%;
+    margin: 0 1rem;
+  }
+}

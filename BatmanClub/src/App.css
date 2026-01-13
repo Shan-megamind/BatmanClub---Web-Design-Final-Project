@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 75rem; 
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+:root {
+  --bat-black: #1a1a1a;
+  --bat-dark-grey: #2a2a2a;
+  --bat-grey: #444;
+  --bat-light-grey: #888;
+  --bat-yellow: #ffd700;
+  --bat-white: #f8f8f8;
+}
+
+.theme-dark {
+  --bat-black: #1a1a1a;
+  --bat-dark-grey: #2a2a2a;
+  --bat-grey: #444;
+  --bat-light-grey: #888;
+  --bat-yellow: #ffd700;
+  --bat-white: #f8f8f8;
+}
+
+.theme-light {
+  --bat-black: #ffffff;
+  --bat-dark-grey: #f0f0f0;
+  --bat-grey: #dddddd;
+  --bat-light-grey: #666666;
+  --bat-yellow: #d4af37;
+  --bat-white: #333333;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--bat-dark-grey);
+  color: var(--bat-white);
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 40rem) {
+  .content {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 25rem) { 
+  .content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 22.5rem) { 
+  .content {
+    padding: 0.5rem;
+    overflow-x: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

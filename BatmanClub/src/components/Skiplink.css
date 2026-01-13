@@ -1,0 +1,21 @@
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: var(--bat-yellow);
+    color: var(--bat-black);
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .skip-link:focus {
+    top: 0;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .skip-link {
+      transition: none;
+    }
+  }

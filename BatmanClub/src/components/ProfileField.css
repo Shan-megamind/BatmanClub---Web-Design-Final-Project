@@ -1,0 +1,136 @@
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--bat-grey);
+  margin-bottom: 1rem;
+}
+
+.field-label {
+  font-weight: bold;
+  color: var(--bat-yellow);
+}
+
+.field-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field-value {
+  color: var(--bat-white);
+}
+
+.field-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field-edit input[type="text"],
+.field-edit select {
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid var(--bat-grey);
+  background-color: var(--bat-dark-grey);
+  color: var(--bat-white);
+  font-size: 1rem;
+}
+
+.field-edit input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--bat-yellow);
+}
+
+.validation-error {
+  color: #ff4444;
+  font-size: 0.9rem;
+}
+
+.field-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.edit-button,
+.save-button,
+.cancel-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.edit-button {
+  background-color: var(--bat-grey);
+  color: var(--bat-white);
+}
+
+.edit-button:hover {
+  background-color: #555;
+}
+
+.save-button {
+  background-color: var(--bat-yellow);
+  color: var(--bat-black);
+}
+
+.save-button:hover {
+  background-color: #e6c200;
+}
+
+.cancel-button {
+  background-color: #555;
+  color: var(--bat-white);
+}
+
+.cancel-button:hover {
+  background-color: #777;
+}
+
+.button-icon {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 40rem) {
+  .profile-field {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  
+  .field-label {
+    width: 30%;
+    padding-top: 0.5rem;
+  }
+  
+  .field-content {
+    width: 70%;
+  }
+}
+
+@media (max-width: 40rem) {
+  .field-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .edit-button,
+  .save-button,
+  .cancel-button {
+    transition: none !important;
+  }
+  
+  .button-icon {
+    transition: none !important;
+  }
+}
